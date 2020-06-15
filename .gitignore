@@ -1,0 +1,7 @@
+.DS_Store
+bin/
+lib/
+pyvenv.cfg
+.vscode/
+Untitled.code-workspace
+trydjango.vscode-project
