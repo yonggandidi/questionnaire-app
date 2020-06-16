@@ -4,7 +4,7 @@ from django.conf import settings
 
 from rest_framework import authentication, exceptions
 
-from .models import User
+from .models import MyUser
 
 
 class JWTAuthentication(authentication.BaseAuthentication):

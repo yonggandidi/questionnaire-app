@@ -1,7 +1,9 @@
 .DS_Store
 bin/
 lib/
+*__pycache__*
 pyvenv.cfg
 .vscode/
 Untitled.code-workspace
 trydjango.vscode-project
+*.pyc
