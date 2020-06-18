@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Quiz',
+            name='Questionnaire',
             fields=[
                 ('id', models.AutoField(auto_created=True,
                                         primary_key=True, serialize=False, verbose_name='ID')),
@@ -26,8 +26,8 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True,
                                         primary_key=True, serialize=False, verbose_name='ID')),
                 ('question_text', models.CharField(max_length=200)),
-                ('quiz', models.ForeignKey(
-                    null=True, on_delete=django.db.models.deletion.CASCADE, to='quizes.Quiz')),
+                ('questionnaire', models.ForeignKey(
+                    null=True, on_delete=django.db.models.deletion.CASCADE, to='questionnaires.questionnaire')),
             ],
         ),
         migrations.CreateModel(
@@ -37,7 +37,7 @@ class Migration(migrations.Migration):
                                         primary_key=True, serialize=False, verbose_name='ID')),
                 ('choice_test', models.CharField(max_length=200)),
                 ('question', models.ForeignKey(
-                    null=True, on_delete=django.db.models.deletion.CASCADE, to='quizes.Question')),
+                    null=True, on_delete=django.db.models.deletion.CASCADE, to='questionnaires.Question')),
             ],
         ),
     ]
